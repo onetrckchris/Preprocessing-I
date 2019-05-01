@@ -4,6 +4,10 @@
    License: none (public domain)
 */
 
+@small-font: 1.1rem;
+@medium-font: 2rem;
+@large-font: 3rem;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +58,39 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+
+	body {
+		max-width: 800px;
+		margin: auto;
+	}
 }
 
+nav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 40px 0px;
+
+	a {
+		margin-left: 30px;
+		font-size: @small-font;
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	height: 650px;
+	background-color: #E9ECEF;
+	padding: 30px;
+
+	h1 {
+		font-size: @large-font;
+	}
+
+	h2 {
+		font-size: 1.4rem;
+	}
+}
