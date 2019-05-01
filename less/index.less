@@ -4,6 +4,12 @@
    License: none (public domain)
 */
 
+@small-font: 1.1rem;
+@medium-font: 2rem;
+@large-font: 3rem;
+@shaded: #f9fbe7;
+@dark-shaded: #827717;
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -54,6 +60,158 @@ table {
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	padding: 0px 15px;
+	font-family: 'Chewy', cursive;
+
+	body {
+		max-width: 900px;
+		margin: auto;
+	}
 }
 
+nav {
+	display: flex;
+	justify-content: flex-end;
+	padding: 40px 0px;
+
+	a {
+		margin-left: 30px;
+		font-size: @small-font;
+		text-decoration: none;
+		color: black;
+	}
+}
+
+.top-content {
+	display: flex;
+	flex-direction: column;
+	background-color: @shaded;
+	padding: 30px;
+	
+	* {
+		margin-bottom: 25px;
+	}
+
+	img {
+		width: 450px;
+	}
+
+	h1 {
+		font-size: @large-font;
+	}
+
+	h2 {
+		font-size: 1.4rem;
+	}
+
+	hr {
+		border: 0;
+		width: 100%;
+		height: 1px;
+		background-color: @dark-shaded;
+	}
+
+	p {
+		font-size: @small-font;
+	}
+
+	button {
+		width: 155px;
+		height: 45px;
+		border-radius: 5px;
+		border-style: none;
+		background-color: @dark-shaded;
+		color: white;
+		font-size: @small-font;
+		font-family: 'Chewy', cursive;
+	}
+}
+
+.middle-content {
+	display: flex;
+	padding: 40px 0px;
+	justify-content: space-between;
+
+	div {
+		width: 48%;
+
+		p {
+			font-size: @small-font;
+			line-height: 25px;
+		}
+
+		h2 {
+			font-size: @medium-font;
+			margin-bottom: 10px;
+		}
+
+		ul {
+			border: 1px solid @dark-shaded;
+			border-radius: 4px;
+
+			li {
+				font-size: @small-font;
+				line-height: 50px;
+				padding-left: 20px;
+				border-bottom: 1px solid @dark-shaded;
+
+				&:last-child {
+					border-bottom: 0px;
+				}
+			}
+		}
+	}
+}
+
+.bottom-content {
+	display: flex;
+	flex-direction: column;
+	h2 {
+		font-size: @medium-font;
+	}
+
+	table {
+		margin: 15px 0px;
+		tbody {
+			display: flex;
+			flex-direction: column;
+
+			.shaded {
+				background-color: @shaded;
+			}
+
+			tr {
+				border-top: 1px solid @dark-shaded;
+				display: flex;
+
+				th {
+					font-size: @small-font;
+					font-weight: 600;
+					width: 25%;
+					padding: 12px;
+					text-align: left;
+				}
+	
+				td {
+					padding: 12px;
+					width: 25%;
+					align-self: center;
+				}
+			}
+		}
+	}
+}
+
+footer {
+	background-color: @dark-shaded;
+	height: 75px;
+	margin-bottom: 25px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+	p {
+		color: @shaded;
+	}
+}
