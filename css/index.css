@@ -133,10 +133,12 @@ table {
 html,
 body {
   height: 100%;
+  padding: 0px 15px;
+  font-family: 'Chewy', cursive;
 }
 html body,
 body body {
-  max-width: 800px;
+  max-width: 900px;
   margin: auto;
 }
 nav {
@@ -153,13 +155,110 @@ nav a {
 .top-content {
   display: flex;
   flex-direction: column;
-  height: 650px;
-  background-color: #E9ECEF;
+  background-color: #f9fbe7;
   padding: 30px;
+}
+.top-content * {
+  margin-bottom: 25px;
+}
+.top-content img {
+  width: 450px;
 }
 .top-content h1 {
   font-size: 3rem;
 }
 .top-content h2 {
   font-size: 1.4rem;
+}
+.top-content hr {
+  border: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #827717;
+}
+.top-content p {
+  font-size: 1.1rem;
+}
+.top-content button {
+  width: 155px;
+  height: 45px;
+  border-radius: 5px;
+  border-style: none;
+  background-color: #827717;
+  color: white;
+  font-size: 1.1rem;
+  font-family: 'Chewy', cursive;
+}
+.middle-content {
+  display: flex;
+  padding: 40px 0px;
+  justify-content: space-between;
+}
+.middle-content div {
+  width: 48%;
+}
+.middle-content div p {
+  font-size: 1.1rem;
+  line-height: 25px;
+}
+.middle-content div h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+.middle-content div ul {
+  border: 1px solid #827717;
+  border-radius: 4px;
+}
+.middle-content div ul li {
+  font-size: 1.1rem;
+  line-height: 50px;
+  padding-left: 20px;
+  border-bottom: 1px solid #827717;
+}
+.middle-content div ul li:last-child {
+  border-bottom: 0px;
+}
+.bottom-content {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content h2 {
+  font-size: 2rem;
+}
+.bottom-content table {
+  margin: 15px 0px;
+}
+.bottom-content table tbody {
+  display: flex;
+  flex-direction: column;
+}
+.bottom-content table tbody .shaded {
+  background-color: #f9fbe7;
+}
+.bottom-content table tbody tr {
+  border-top: 1px solid #827717;
+  display: flex;
+}
+.bottom-content table tbody tr th {
+  font-size: 1.1rem;
+  font-weight: 600;
+  width: 25%;
+  padding: 12px;
+  text-align: left;
+}
+.bottom-content table tbody tr td {
+  padding: 12px;
+  width: 25%;
+  align-self: center;
+}
+footer {
+  background-color: #827717;
+  height: 75px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer p {
+  color: #f9fbe7;
 }
